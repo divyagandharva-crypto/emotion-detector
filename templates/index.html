@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emotion Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='mystyle.css') }}">
+</head>
+
+<body>
+
+<h1>Emotion Detector</h1>
+
+<label for="textToAnalyze">
+Please enter the text to be analyzed:
+</label>
+
+<br><br>
+
+<textarea
+id="textToAnalyze"
+rows="5"
+cols="60">
+</textarea>
+
+<br><br>
+
+<button onclick="RunSentimentAnalysis()">
+Analyze Emotion
+</button>
+
+<br><br>
+
+<div id="system_response"></div>
+
+<script src="{{ url_for('static', filename='mywebscript.js') }}"></script>
+
+</body>
+</html>
